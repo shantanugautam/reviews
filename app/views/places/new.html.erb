@@ -1,0 +1,10 @@
+<%= simple_form_for @place do |form| %>
+  <%= form.input :name, label: "Place Name" %>
+  <%= form.input :description, as: :text, label: "Your desription" %>
+  <%= form.input :url, label: "Url to Venue" %>
+  <%= form.input :closed, label: "Closed" %>
+  <%= form.input :offers, label: "Offers" %>
+  <%= form.input :images, label: "Images" %>
+  <%= form.input :address, label: "Address" %>
+  <%= form.button :submit %>
+<% end %>

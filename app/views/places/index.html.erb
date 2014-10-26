@@ -1,0 +1,9 @@
+<h1>Places</h1>
+<% @places.each do |place| %>
+  <div class="place">
+    <h2><%= link_to place.title, place.url %></h2>
+    <p><%= place.description %>
+  </div>
+<% end %>
+<p><%= link_to "Add a job", new_place_path %></p>
+<p><%= paginate @places %></p>
